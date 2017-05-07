@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-16"?>
+<xs:schema id="TachesProduction" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="TachesProduction" msdata:IsDataSet="true" msdata:Locale="en-US">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="TacheProd">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Travaux" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Travail" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="Date" type="xs:string" />
+                                                <xs:attribute name="Heures" type="xs:string" />
+                                                <xs:attribute name="TauxProduct" type="xs:string" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Libelle" type="xs:string" />
+                        <xs:attribute name="Activite" type="xs:string" />
+                        <xs:attribute name="Personne" type="xs:string" />
+                        <xs:attribute name="DureePrev" type="xs:string" />
+                        <xs:attribute name="DureeRest" type="xs:string" />
+                        <xs:attribute name="Logiciel" type="xs:string" />
+                        <xs:attribute name="Module" type="xs:string" />
+                        <xs:attribute name="Version" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
